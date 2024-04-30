@@ -76,20 +76,58 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: AppWidget.HeadLinetextFieldStyle(),
                         ),
                         TextFormField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                               hintText: "Email", prefixIcon: Icon(Icons.mail)),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 12.0,
                         ),
                         TextFormField(
+                          obscureText: true,
                           decoration: const InputDecoration(
                               hintText: "Password",
                               prefixIcon: Icon(Icons.lock)),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          alignment: Alignment.topRight,
+                          child: Text(
+                            "Forgot Password?",
+                            style: AppWidget.semiboldTextFeildStyle(),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 80.0,
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(vertical: 8.0),
+                          width: 200,
+                          decoration: BoxDecoration(
+                              color: const Color(0xfffff5722),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: const Center(
+                            child: Text(
+                              "Login",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18.0,
+                                  fontFamily: "Poppins",
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
                         )
                       ],
                     ),
                   ),
+                ),
+                SizedBox(
+                  height: 70.0,
+                ),
+                Text(
+                  "Don't have an account? Sign up",
+                  style: AppWidget.semiboldTextFeildStyle(),
                 )
               ],
             ),
