@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:yourschef/pages/details-screen.dart';
 import 'package:yourschef/widgets/Widgets_support.dart';
 import 'package:yourschef/widgets/category.dart';
 
@@ -53,42 +54,48 @@ class _HomeState extends State<Home> {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  Material(
-                    elevation: 5.0,
-                    borderRadius: BorderRadius.circular(10),
-                    child: Container(
-                      margin: const EdgeInsets.all(4),
-                      padding: const EdgeInsets.all(14),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: CircleAvatar(
-                              radius: 80,
-                              backgroundColor: Colors.grey,
-                              child: Icon(
-                                Icons.person,
-                                size: 50,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Details()));
+                    },
+                    child: Material(
+                      elevation: 5.0,
+                      borderRadius: BorderRadius.circular(10),
+                      child: Container(
+                        margin: const EdgeInsets.all(4),
+                        padding: const EdgeInsets.all(14),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: CircleAvatar(
+                                radius: 80,
+                                backgroundColor: Colors.grey,
+                                child: Icon(
+                                  Icons.person,
+                                  size: 50,
+                                ),
                               ),
                             ),
-                          ),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            "Chef Xavier",
-                            style: AppWidget.semiboldTextFeildStyle(),
-                          ),
-                          Text(
-                            "Indian cuisine",
-                            style: AppWidget.LighttextFieldStyle(),
-                          ),
-                          Text(
-                            "\$10 /per hour",
-                            style: AppWidget.semiboldTextFeildStyle(),
-                          )
-                        ],
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            Text(
+                              "Chef Xavier",
+                              style: AppWidget.semiboldTextFeildStyle(),
+                            ),
+                            Text(
+                              "Indian cuisine",
+                              style: AppWidget.LighttextFieldStyle(),
+                            ),
+                            Text(
+                              "\$10 /per hour",
+                              style: AppWidget.semiboldTextFeildStyle(),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),

@@ -24,19 +24,22 @@ class _Category extends State<Category> {
                 continental = false;
                 setState(() {});
               },
-              child: Material(
-                elevation: 5.0,
-                borderRadius: BorderRadius.circular(10),
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: indian ? Colors.black : Colors.white,
-                      borderRadius: BorderRadius.circular(10)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Text("Indian",
-                        style: TextStyle(
-                            color: indian ? Colors.white : Colors.black,
-                            fontFamily: "Poppins")),
+              child: GestureDetector(
+                onTap: () {},
+                child: Material(
+                  elevation: 5.0,
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: indian ? Colors.black : Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text("Indian",
+                          style: TextStyle(
+                              color: indian ? Colors.white : Colors.black,
+                              fontFamily: "Poppins")),
+                    ),
                   ),
                 ),
               ),
