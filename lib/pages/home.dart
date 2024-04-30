@@ -57,8 +57,8 @@ class _HomeState extends State<Home> {
                     elevation: 5.0,
                     borderRadius: BorderRadius.circular(10),
                     child: Container(
-                      margin: EdgeInsets.all(4),
-                      padding: EdgeInsets.all(14),
+                      margin: const EdgeInsets.all(4),
+                      padding: const EdgeInsets.all(14),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -92,15 +92,15 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Material(
                     elevation: 5.0,
                     borderRadius: BorderRadius.circular(10),
                     child: Container(
-                      margin: EdgeInsets.all(4),
-                      padding: EdgeInsets.all(14),
+                      margin: const EdgeInsets.all(4),
+                      padding: const EdgeInsets.all(14),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -137,7 +137,7 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             ),
             Container(
@@ -145,11 +145,11 @@ class _HomeState extends State<Home> {
                 elevation: 5.0,
                 borderRadius: BorderRadius.circular(10),
                 child: Container(
-                  padding: EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 60,
                         backgroundColor: Colors.grey,
                         child: Icon(
@@ -157,7 +157,7 @@ class _HomeState extends State<Home> {
                           size: 50,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20.0,
                       ),
                       Column(
@@ -169,7 +169,7 @@ class _HomeState extends State<Home> {
                               style: AppWidget.semiboldTextFeildStyle(),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5.0,
                           ),
                           Container(
