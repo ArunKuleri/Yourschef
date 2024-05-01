@@ -77,14 +77,17 @@ class _SignUpState extends State<SignUp> {
                         ),
                         TextFormField(
                           decoration: const InputDecoration(
-                              hintText: "Name", prefixIcon: Icon(Icons.mail)),
+                              hintText: "Name", prefixIcon: Icon(Icons.person)),
+                        ),
+                        SizedBox(
+                          height: 20,
                         ),
                         TextFormField(
                           decoration: const InputDecoration(
                               hintText: "Email", prefixIcon: Icon(Icons.mail)),
                         ),
                         const SizedBox(
-                          height: 12.0,
+                          height: 20.0,
                         ),
                         TextFormField(
                           obscureText: true,
