@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:yourschef/pages/sign_up.dart';
+import 'package:yourschef/pages/login_screen.dart';
 import 'package:yourschef/widgets/Widgets_support.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   borderRadius: BorderRadius.circular(20),
                   child: Container(
                     width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height / 2,
+                    height: MediaQuery.of(context).size.height / 1.5,
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20)),
@@ -75,6 +74,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         Text(
                           "Login ",
                           style: AppWidget.HeadLinetextFieldStyle(),
+                        ),
+                        TextFormField(
+                          decoration: const InputDecoration(
+                              hintText: "Name", prefixIcon: Icon(Icons.mail)),
                         ),
                         TextFormField(
                           decoration: const InputDecoration(
@@ -110,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               borderRadius: BorderRadius.circular(10)),
                           child: const Center(
                             child: Text(
-                              "Login",
+                              "Sign Up",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18.0,
@@ -123,18 +126,16 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 70.0,
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const SignUp()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginScreen()));
                   },
                   child: Text(
-                    "Don't have an account? Sign up",
+                    "Already have an account? Login up",
                     style: AppWidget.semiboldTextFeildStyle(),
                   ),
                 )
