@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "534749410325",
+    "project_id": "yourschef-9398f",
+    "storage_bucket": "yourschef-9398f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534749410325:android:c953bd2e512dc14e394a1c",
+        "android_client_info": {
+          "package_name": "com.example.yourschef"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYLpxvrdeJ5BT1kMiH5z4vdZ5MPtMJ4gs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
