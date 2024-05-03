@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:yourschef/pages/forgotpassword.dart';
 import 'package:yourschef/pages/sign_up.dart';
 import 'package:yourschef/widgets/Widgets_support.dart';
 
@@ -137,9 +138,18 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                           Container(
                             alignment: Alignment.topRight,
-                            child: Text(
-                              "Forgot Password?",
-                              style: AppWidget.semiboldTextFeildStyle(),
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            ForgotPassword()));
+                              },
+                              child: Text(
+                                "Forgot Password?",
+                                style: AppWidget.semiboldTextFeildStyle(),
+                              ),
                             ),
                           ),
                           const SizedBox(

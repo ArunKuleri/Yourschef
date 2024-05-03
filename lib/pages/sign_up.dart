@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:yourschef/pages/bottomnav.dart';
+import 'package:yourschef/pages/forgotpassword.dart';
 import 'package:yourschef/pages/login_screen.dart';
 import 'package:yourschef/widgets/Widgets_support.dart';
 
@@ -160,13 +161,6 @@ class _SignUpState extends State<SignUp> {
                           ),
                           const SizedBox(
                             height: 20,
-                          ),
-                          Container(
-                            alignment: Alignment.topRight,
-                            child: Text(
-                              "Forgot Password?",
-                              style: AppWidget.semiboldTextFeildStyle(),
-                            ),
                           ),
                           const SizedBox(
                             height: 80.0,
