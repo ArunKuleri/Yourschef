@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:yourschef/pages/sign_up.dart';
 
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({super.key});
@@ -128,6 +130,36 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                                             fontSize: 18.0,
                                             fontWeight: FontWeight.bold),
                                       ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 60),
+                            child: Container(
+                              height: 20,
+                              width: 20,
+                              child: Row(
+                                children: [
+                                  const Text(
+                                    "Don't have an account?",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => SignUp()));
+                                    },
+                                    child: const Text(
+                                      "Sign up ",
+                                      style: TextStyle(color: Colors.yellow),
                                     ),
                                   )
                                 ],
